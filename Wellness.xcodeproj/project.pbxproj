@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		700049791AD037A000A7CF68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700049781AD037A000A7CF68 /* AppDelegate.swift */; };
 		7000497C1AD037A000A7CF68 /* Wellness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7000497A1AD037A000A7CF68 /* Wellness.xcdatamodeld */; };
-		7000497E1AD037A000A7CF68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7000497D1AD037A000A7CF68 /* ViewController.swift */; };
 		700049811AD037A000A7CF68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7000497F1AD037A000A7CF68 /* Main.storyboard */; };
 		700049831AD037A000A7CF68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 700049821AD037A000A7CF68 /* Images.xcassets */; };
 		700049861AD037A000A7CF68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 700049841AD037A000A7CF68 /* LaunchScreen.xib */; };
 		700049921AD037A000A7CF68 /* WellnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700049911AD037A000A7CF68 /* WellnessTests.swift */; };
+		7000499D1AD037D500A7CF68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7000499B1AD037D500A7CF68 /* ViewController.swift */; };
+		7000499E1AD037D500A7CF68 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7000499C1AD037D500A7CF68 /* WeatherModel.swift */; };
+		700049A01AD0382100A7CF68 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7000499F1AD0382100A7CF68 /* Forecast.swift */; };
+		700049A31AD0395A00A7CF68 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700049A21AD0395A00A7CF68 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +34,17 @@
 		700049771AD037A000A7CF68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		700049781AD037A000A7CF68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7000497B1AD037A000A7CF68 /* Wellness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wellness.xcdatamodel; sourceTree = "<group>"; };
-		7000497D1AD037A000A7CF68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		700049801AD037A000A7CF68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		700049821AD037A000A7CF68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		700049851AD037A000A7CF68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7000498B1AD037A000A7CF68 /* WellnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		700049901AD037A000A7CF68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		700049911AD037A000A7CF68 /* WellnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessTests.swift; sourceTree = "<group>"; };
+		7000499B1AD037D500A7CF68 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7000499C1AD037D500A7CF68 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		7000499F1AD0382100A7CF68 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		700049A11AD0395A00A7CF68 /* Wellness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Wellness.entitlements; sourceTree = "<group>"; };
+		700049A21AD0395A00A7CF68 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				700049A31AD0395A00A7CF68 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +69,7 @@
 		7000496A1AD037A000A7CF68 = {
 			isa = PBXGroup;
 			children = (
+				700049A21AD0395A00A7CF68 /* HealthKit.framework */,
 				700049751AD037A000A7CF68 /* Wellness */,
 				7000498E1AD037A000A7CF68 /* WellnessTests */,
 				700049741AD037A000A7CF68 /* Products */,
@@ -79,8 +88,11 @@
 		700049751AD037A000A7CF68 /* Wellness */ = {
 			isa = PBXGroup;
 			children = (
+				700049A11AD0395A00A7CF68 /* Wellness.entitlements */,
 				700049781AD037A000A7CF68 /* AppDelegate.swift */,
-				7000497D1AD037A000A7CF68 /* ViewController.swift */,
+				7000499B1AD037D500A7CF68 /* ViewController.swift */,
+				7000499C1AD037D500A7CF68 /* WeatherModel.swift */,
+				7000499F1AD0382100A7CF68 /* Forecast.swift */,
 				7000497F1AD037A000A7CF68 /* Main.storyboard */,
 				700049821AD037A000A7CF68 /* Images.xcassets */,
 				700049841AD037A000A7CF68 /* LaunchScreen.xib */,
@@ -164,6 +176,12 @@
 				TargetAttributes = {
 					700049721AD037A000A7CF68 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 9SX453SFU2;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					7000498A1AD037A000A7CF68 = {
 						CreatedOnToolsVersion = 6.2;
@@ -215,9 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7000497E1AD037A000A7CF68 /* ViewController.swift in Sources */,
+				7000499D1AD037D500A7CF68 /* ViewController.swift in Sources */,
 				7000497C1AD037A000A7CF68 /* Wellness.xcdatamodeld in Sources */,
+				7000499E1AD037D500A7CF68 /* WeatherModel.swift in Sources */,
 				700049791AD037A000A7CF68 /* AppDelegate.swift in Sources */,
+				700049A01AD0382100A7CF68 /* Forecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Wellness/Wellness.entitlements;
 				INFOPLIST_FILE = Wellness/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Wellness/Wellness.entitlements;
 				INFOPLIST_FILE = Wellness/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
